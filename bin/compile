@@ -19,4 +19,4 @@ curl -L --silent $DOWNLOAD_URL | tar xz
 echo "exporting PATH and LIBRARY_PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ecasound.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo './configure && make && make install"' >> $PROFILE_PATH
+echo './configure && make && make install' >> $PROFILE_PATH
