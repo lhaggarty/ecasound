@@ -6,13 +6,11 @@ indent() {
 
 echo "-----> Installing ecasound"
 BUILD_DIR=$1
-VENDOR_DIR="vendor"
 DOWNLOAD_URL="http://ecasound.seul.org/download/ecasound-2.9.1.tar.gz"
 
 echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
 cd $BUILD_DIR
-mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 curl -L --silent $DOWNLOAD_URL | tar xz
 
