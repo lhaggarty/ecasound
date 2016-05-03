@@ -6,4 +6,4 @@ indent() {
 
 echo "-----> Installing ecasound"
 
-rake moviemasher:install_ecasound
+exec 'rake moviemasher:install_ecasound'
