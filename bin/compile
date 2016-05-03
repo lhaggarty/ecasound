@@ -10,7 +10,6 @@ BUILD_DIR=$1
 
 cd $BUILD_DIR
 cd $VENDOR_DIR
-curl -L --silent $DOWNLOAD_URL | tar xz
 
 echo "exporting PATH and LIBRARY_PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ecasound.sh"
