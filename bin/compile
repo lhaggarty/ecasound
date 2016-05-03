@@ -9,5 +9,4 @@ indent() {
 echo "-----> Install ecasound"
 echo "-----> Brew Install ecasound"
 
-heroku run bash
-brew install ecasound
+echo 'brew install -f http://ecasound.seul.org/download/ecasound-2.9.1.tar.gz' >> ~/.bash_profile
