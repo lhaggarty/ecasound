@@ -7,7 +7,9 @@ indent() {
 echo "-----> Installing ecasound"
 
 BUILD_DIR=$1
+VENDOR_DIR="vendor"
+
 cd $BUILD_DIR
 cd $VENDOR_DIR
 
-exec 'brew install ecasound'
+exec 'rake moviemasher:install_ecasound'
