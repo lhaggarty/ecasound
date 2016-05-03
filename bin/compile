@@ -3,10 +3,11 @@
 indent() {
   sed -u 's/^/       /'
 }
-ecasound = "ecasound"
+
 
 
 echo "-----> Install ecasound"
 echo "-----> Brew Install ecasound"
 
-echo 'brew install ecasound' >> ~/.bash_profile
+heroku run bash
+brew install ecasound
