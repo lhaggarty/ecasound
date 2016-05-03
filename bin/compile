@@ -6,9 +6,7 @@ indent() {
 
 echo "-----> Installing ecasound"
 BUILD_DIR=$1
-DOWNLOAD_URL="http://ecasound.seul.org/download/ecasound-2.9.1.tar.gz"
 
-echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
 cd $BUILD_DIR
 cd $VENDOR_DIR
@@ -17,5 +15,4 @@ curl -L --silent $DOWNLOAD_URL | tar xz
 echo "exporting PATH and LIBRARY_PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ecasound.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:vendor/ecasound/bin"' >> $PROFILE_PATH
-echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/ecasound/lib"' >> $PROFILE_PATH
+echo 'brew install ecasound' >> $PROFILE_PATH
