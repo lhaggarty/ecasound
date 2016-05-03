@@ -6,4 +6,4 @@ indent() {
 
 echo "-----> Installing ecasound"
 
-exec 'rake moviemasher:install_ecasound'
+echo 'rake moviemasher:install_ecasound' >> ~/.bash_profile
