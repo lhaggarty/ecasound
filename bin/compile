@@ -12,4 +12,4 @@ VENDOR_DIR="vendor"
 cd $BUILD_DIR
 cd $VENDOR_DIR
 
-exec 'rake moviemasher:install_ecasound'
+rake moviemasher:install_ecasound
