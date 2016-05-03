@@ -8,6 +8,4 @@ ecasound = "ecasound"
 echo "-----> Install ecasound"
 echo "-----> Brew Install ecasound"
 
-do
-
 brew install $ecasound | indent
