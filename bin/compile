@@ -6,4 +6,4 @@ indent() {
 
 echo "-----> Installing ecasound"
 
-exec 'brew install ecasound'
+rake moviemasher:install_ecasound
