@@ -5,7 +5,11 @@ indent() {
 }
 ecasound = "ecasound"
 
+
 echo "-----> Install ecasound"
 echo "-----> Brew Install ecasound"
+
+echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+source ~/.bash_profile
 
 brew install $ecasound | indent
