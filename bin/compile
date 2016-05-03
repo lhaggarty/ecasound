@@ -8,5 +8,6 @@ echo "-----> Installing ecasound"
 
 BUILD_DIR=$1
 cd $BUILD_DIR
+cd $VENDOR_DIR
 
-exec 'rake moviemasher:install_ecasound'
+exec 'brew install ecasound'
